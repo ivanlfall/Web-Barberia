@@ -1,113 +1,61 @@
-body{
+*{
     margin: 0;
     padding: 0;
-    /* background: #DCB955; */
-    color: black;
-    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
 }
 
 html{
     scroll-behavior: smooth;
 }
 
-p span{
-    color: #ECAE42 ;
-    font-weight: bold;
+body{
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
 
-.contenedorprincipal{
-    background: #313030;
-    margin-top: 30px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+p{
+    font-family: 'Sansita Swashed', cursive;
+    font-size: large;
+    color: #1e272e;
+}
 
+span{
+    color: #ECAE42;
+}
+
+footer{
     width: 90%;
 
-}
-
-.contenedorsecciones{
-    border: 5px solid black;
-    height: 800px ;
-    width: 100%;
-
-    /* background: white; */
     color: white;
-    font-size: x-large;
-    font-family: 'Big Shoulders Inline Text', cursive;
-
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-    background-blend-mode: multiply,multiply;
-
+    font-size: 24px;
 }
 
-.contenedorsecciones h2{
-    padding-bottom: 40px;
+.cabecera{
+    width: 90%;
+    
 }
 
 .logo{
-    width: 20%;
-    max-width: 160px;
+
+    height: 250px;
 }
 
-nav{
-    position: fixed;
-    top: 0px;
-    width:90%;
-    text-align: center;
-    background: black;
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
+.navegacion{
+    width: 90%;
+    position: sticky;
 }
 
-.menubar{
-    display: inline;
-    /* background-color: #a5b1c2 ;
-    border: 1px solid #a5b1c2; */
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
+.nosotros{
+    width: 90%;
+    height: 700px;
 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-shadow: 8px 5px 6px black ;
-}
-
-.botonmenu{
-    text-decoration-line: none;
-    
-    font-family: sans-serif 14px;
-    font-weight: bold;
-}
-
-a:visited ,a:active{
-    color: white;
-}
-
-
-.menubar:hover{
-    background-color: #e55039;
-}
-
-.seccionNosotros{
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
+    justify-content: center;
 }
 
-.seccionServicios{
-    
+.servicios{
+    width: 90%;
+    height: 700px;
+
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -116,6 +64,9 @@ a:visited ,a:active{
 }
 
 .contacto{
+    width: 90%;
+    height: 500px;
+
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -128,16 +79,4 @@ a:visited ,a:active{
 
 .iconos img{
     padding-right: 10px;
-}
-
-footer{
-    
-    height: 30px;
-    width: 100%;
-    background: black;
-    color: white;
-
-    text-align: center;
-    font-size: x-large;
-    font-family: 'Big Shoulders Inline Text', cursive;
 }
