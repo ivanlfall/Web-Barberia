@@ -17,20 +17,19 @@ p{
     color: #1e272e;
 }
 
+@media(max-width: 576px){
+    p{
+        font-size: 10px;
+    }
+}
+
 span{
     color: #ECAE42;
 }
 
 footer{
-    width: 90%;
-
     color: white;
     font-size: 24px;
-}
-
-.cabecera{
-    width: 90%;
-    
 }
 
 .logo{
@@ -39,12 +38,10 @@ footer{
 }
 
 .navegacion{
-    width: 90%;
     position: sticky;
 }
 
 .nosotros{
-    width: 90%;
     height: 700px;
 
     display: flex;
@@ -53,8 +50,7 @@ footer{
 }
 
 .servicios{
-    width: 90%;
-    height: 700px;
+    height: fit-content;
 
     display: flex;
     flex-flow: column wrap;
@@ -63,9 +59,41 @@ footer{
 
 }
 
+
+
+@media(max-width: 576px){
+    .servicio{
+        width: 15%;
+        height: 20%;
+    }
+}
+
+
+@media(max-width: 576px){
+    .img-servicios{
+        width: 55%;
+    }
+}
+
+.servicios h2{
+    color: white;
+}
+
+.servicio{
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+
+    position: flex;
+    align-content: center;
+}
+
+.servicio p{
+    color: white;
+}
+
 .contacto{
-    width: 90%;
-    height: 500px;
+    height: 600px;
 
     display: flex;
     flex-flow: column wrap;
@@ -80,3 +108,4 @@ footer{
 .iconos img{
     padding-right: 10px;
 }
+
