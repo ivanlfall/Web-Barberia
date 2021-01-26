@@ -49,6 +49,10 @@ footer{
     justify-content: center;
 }
 
+.nosotros p{
+    margin: 2px 0;
+}
+
 .servicios{
     height: fit-content;
 
@@ -59,22 +63,6 @@ footer{
 
 }
 
-
-
-@media(max-width: 576px){
-    .servicio{
-        width: 15%;
-        height: 20%;
-    }
-}
-
-
-@media(max-width: 576px){
-    .img-servicios{
-        width: 55%;
-    }
-}
-
 .servicios h2{
     color: white;
 }
@@ -83,9 +71,6 @@ footer{
     border: 2px solid gray;
     border-radius: 10px;
     margin: 10px;
-
-    position: flex;
-    align-content: center;
 }
 
 .servicio p{
