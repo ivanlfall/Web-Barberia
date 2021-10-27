@@ -6,37 +6,30 @@
 html{
     scroll-behavior: smooth;
 }
-
-body{
-    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
-}
-
-p{
-    font-family: 'Sansita Swashed', cursive;
-    font-size: large;
-    color: #1e272e;
-}
-
-@media(max-width: 576px){
-    p{
-        font-size: 10px;
+    body{
+        background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
     }
-}
-
-span{
-    color: #ECAE42;
-}
-
-footer{
-    color: white;
-    font-size: 24px;
-}
+        header{
+            background: rgb(13, 89, 96);
+        }
+        p{
+            font-family: 'Sansita Swashed', cursive;
+            font-size: large;
+            color: #1e272e;
+        }
+        span{
+            color: #ECAE42;
+        }
+        footer{
+            color: white;
+            font-size: 24px;
+        }
 
 .logo{
 
     height: 250px;
+    width: 75%;
 }
-
 .navegacion{
     position: sticky;
 }
@@ -48,10 +41,9 @@ footer{
     flex-flow: column wrap;
     justify-content: center;
 }
-
-.nosotros p{
-    margin: 2px 0;
-}
+    .nosotros p{
+        margin: 2px 0;
+    }
 
 .servicios{
     height: fit-content;
@@ -62,21 +54,18 @@ footer{
     align-items: center;
 
 }
-
-.servicios h2{
-    color: white;
-}
-
-.servicio{
-    border: 2px solid gray;
-    border-radius: 10px;
-    margin: 10px;
-}
-
-.servicio p{
-    color: white;
-}
-
+    .servicio{
+        height: 300px ; 
+        width: 300px;
+        background: whitesmoke;
+        color: #1e272e;
+        border: 2px solid white;
+        border-radius: 10px;
+        margin: 10px 10px;
+    }
+    .servicio:hover{
+        box-shadow: 2px 2px 12px whitesmoke
+    }
 .contacto{
     height: 600px;
 
@@ -85,12 +74,31 @@ footer{
     justify-content: center;
     align-items: center;
 }
+    .iconos{
+        flex-direction: row;
+    }
+    .iconos img{
+        padding-right: 10px;
+    }
+    .iconos img:hover{
+        height: 70px ;
+        width: 80px ;
+    }
 
-.iconos{
-    flex-direction: row;
+.btnSubir{
+    display:none;
+	font-size:20px;
+	position: fixed;
+	bottom:40px;
+	right:20px;
 }
 
-.iconos img{
-    padding-right: 10px;
-}
 
+@media(max-width: 576px){
+    p{
+        font-size: 14px;
+    }
+    .logo{
+        width: 100%;
+    }
+}
